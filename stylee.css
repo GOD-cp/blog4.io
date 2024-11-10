@@ -511,7 +511,7 @@ img {
     align-items: center;
     z-index: 9999; /* 表示が前面になるように */
     opacity: 0; /* 初期状態で透明に */
-  transition: opacity 1s ease; /* 1秒でフェードイン */
+  transition: opacity 2s ease; /* 1秒でフェードイン */
   }
   
   #popup {
