@@ -17,9 +17,15 @@ header {
     position: relative;
     z-index: 1000;
 }
+h3 {
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+}
 
 header h1 {
-   
+    margin-top: 100px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -55,6 +61,7 @@ nav ul li a:hover {
 }
 
 .container {
+    position: relative;
     width: 80%;
     max-width: 800px;
     margin: auto;
@@ -158,6 +165,8 @@ article h2 {
 }
 
 
+
+
 .image-container {
    width: 100%;
     max-width: 800px;
@@ -188,6 +197,7 @@ article h2 {
 
 .research-image {
     width: 60%;
+    padding:10px;
     height: auto;
     display: block;
 }
@@ -277,7 +287,6 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-    margin-bottom: 200px;
 }
 /* 画像の共通スタイル */
 img {
@@ -351,7 +360,7 @@ img {
 /* ブログ記事の下の画像 */
 .blog-image {
     width: 728px;
-    height: 140px;
+    height: 120px;
     display: block;
     margin: 20px auto;
 }
@@ -380,36 +389,12 @@ img {
 }
 
 .fixed-top-image {
-    width: 328px;
-    height: 450px;
+    width: 628px;
+    height: 120px;
     display: block;
-    margin: 50px 550px;
-}
-/*.fixed-top-image1 {
-    width: 328px;
-    height: 450px;
-    display: block;
-    margin: 80px 500px;
+    margin: 0 auto;
 }
 
-.fixed-top-image2 {
-    width: 328px;
-    height: 450px;
-    display: block;
-    margin: 180px 700px;
-}
-.fixed-top-image3 {
-    width: 328px;
-    height: 450px;
-    display: block;
-    margin: 0px 900px;
-}
-.fixed-top-image4 {
-    width: 328px;
-    height: 450px;
-    display: block;
-    margin: 300px 250px;
-}*/
 /* 画像コンテナと×ボタンのスタイル */
 /*.image-container {
     position: relative;
@@ -431,7 +416,6 @@ img {
 
 /* 広告ラベルのスタイル */
 .ad-label {
-    text-align:center;
     font-size: 14px;
     color: black;
     margin-right: 50px; 
@@ -455,90 +439,8 @@ img {
     text-align: center;
     z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
 }
-.close-btnx {
-    position: absolute;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
-    top: 50px;
-    right: 530px;
-}
-.close-btnx1 {
-    position: absolute;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
-    top: 90px;
-    right: 580px;
-}
-.close-btnx2 {
-    position: absolute;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
-    top: 180px;
-    right: 380px;
-}
-.close-btnx3 {
-    position: absolute;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
-    top: 0px;
-    right: 180px;
-}
-.close-btnx4 {
-    position: absolute;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
-    top: 300px;
-    right: 830px;
-}
 .close-btn1 {
     position: absolute;
-    top: 10px;
-    right: -310px;
     background-color: white;
     color: blue;
     border: none;
@@ -549,9 +451,14 @@ img {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    z-index: 10; /* 画像の上にボタンを表示するためにz-indexを設定 */
+    top: 50%; /* 親要素の中央に配置するため、上下中央の位置を50%とします */
+  left: 95%; /* 親要素の中央に配置するため、左右中央の位置を50%とします */
+  transform: translate(-50%, -50%); /* 子要素の左上の位置を子要素の中央に合わせるため、左上の位置を50%ずらします */
 }
 
+
+  
+    
 .close-btn2 {
     position: absolute;
     top: 10px;
@@ -573,21 +480,6 @@ img {
 .close-btn:hover {
     background-color: darkred;
 }
-.close-btnx:hover {
-    background-color: darkred;
-}
-.close-btnx1:hover {
-    background-color: darkred;
-}
-.close-btnx2:hover {
-    background-color: darkred;
-}
-.close-btnx3:hover {
-    background-color: darkred;
-}
-.close-btnx4:hover {
-    background-color: darkred;
-}
 .close-btn1:hover {
     background-color: darkred;
 }
@@ -601,78 +493,62 @@ img {
     text-align: center;
 }
 
+.button-wrap {
 
-   
-  .contents {
-    height: 2000px;
-    width: 100%;
-    background: rgb(255,201,114);
-    background: linear-gradient(118deg, rgba(255,201,114,1) 0%, rgba(246,179,84,1) 40%, rgba(231,229,97,1) 100%);
-  }
-   
-  .button-wrap {
-    z-index: 100;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
 }
+
+/* CSS */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 背景を薄暗くする */
+    display: flex; /* 初期状態で非表示 */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* 表示が前面になるように */
+    opacity: 0; /* 初期状態で透明に */
+  transition: opacity 1s ease; /* 1秒でフェードイン */
+  }
   
-   
-/* 10秒後に0.5秒かけて"late-open"を実行する */
-
-.fixed-top-image {
-    animation-name: fadeIn1s;
-    animation-delay: 2s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    transform: translateY(-50px);
-    opacity: 0;
-}
-@keyframes fadeIn1s {
-    0% {
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.close-btnx {
-    animation-name: fadeIn1s;
-    animation-delay: 2s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    transform: translateY(-50px);
-    opacity: 0;
-}
-@keyframes fadeIn1s {
-    0% {
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.button-wrap {
-    animation-name: fadeIn1s;
-    animation-delay: 2s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    transform: translateY(-50px);
-    opacity: 0;
-}
-@keyframes fadeIn1s {
-    0% {
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+  #popup {
+    position: relative;
+    width: 328px;
+    height: 450px;
+    
+    
+    
+    text-align: center;
+  }
   
-
+  #popup img {
+    width: 328px;
+    height: 450px;
+    
+  }
+  
+  #close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    z-index: 10; 
+  }
+  
+  #close-button:hover {
+    background-color: darkred;
+}
+  
 
