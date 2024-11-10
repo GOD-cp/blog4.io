@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       const overlay = document.getElementById('overlay');
       overlay.style.opacity = '1'; // フェードイン開始
-    }, 100); // 2秒後に表示
+    }, 1000); // 2秒後に表示
   });
   
   document.getElementById('close-button').addEventListener('click', function() {
